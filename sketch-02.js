@@ -48,21 +48,21 @@ const sketch = () => {
       context.fill();
       context.restore();
 
-      // context.save();
-      // context.translate(cx, cy);
-      // context.rotate(-angle);
+      context.save();
+      context.translate(cx, cy);
+      context.rotate(-angle);
 
-      // context.lineWidth = random.range(5, 20);
-      // context.beginPath();
-      // context.arc(
-      //   0,
-      //   0,
-      //   radius * random.range(0.7, 1.3),
-      //   slice * random.range(1, -7),
-      //   slice * random.range(1, 4)
-      // );
-      // context.stroke();
-      // context.restore();
+      context.lineWidth = random.range(5, 20);
+      context.beginPath();
+      context.arc(
+        0,
+        0,
+        radius * random.range(0.7, 1.3),
+        slice * random.range(1, -7),
+        slice * random.range(1, 4)
+      );
+      context.stroke();
+      context.restore();
     }
   };
 };
