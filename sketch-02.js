@@ -4,6 +4,7 @@ const random = require("canvas-sketch-util/random");
 
 const settings = {
   dimensions: [1080, 1080],
+  // animate: true,
 };
 
 const degToRad = (degrees) => {
@@ -33,7 +34,7 @@ const sketch = () => {
 
     for (let i = 0; i < num; i++) {
       const slice = math.degToRad(360 / num);
-      const angle = slice * i;
+      let angle = slice * i;
 
       x = cx + radius * Math.sin(angle);
       y = cy + radius * Math.cos(angle);
